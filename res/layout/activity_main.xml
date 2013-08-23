@@ -1,0 +1,195 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableRow
+        android:id="@+id/titleRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Dark Souls Co-op Calculator"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/yourLevelRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/yourLevelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Your Level:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/yourLevelNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/calculateRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp" >
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate!" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/summonedByRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/canBeSummonedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Can Be Summoned By:"  
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/canBeSummonedByNumRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/canBeSummonedByNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/canSummonRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/canSummonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Can Summon:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/canSummonNumRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/canSummonNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/donateRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/donateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Donate ($0.33)" />
+
+    </TableRow>
+
+</TableLayout>
