@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
 		bindService(new Intent("com.android.vending.billing.InAppBillingService.BIND"),
 		                mServiceConn, Context.BIND_AUTO_CREATE);
 		
-		donateBTN = (Button) findViewById(R.id.donateButton);
+/*		donateBTN = (Button) findViewById(R.id.donateButton);
 		
 		donateBTN.setOnClickListener(new OnClickListener(){
 			@Override
@@ -113,7 +113,7 @@ public class MainActivity extends Activity {
 					e.printStackTrace();
 				}
 			}
-		});
+		});*/
 		
 		yourLevelETX.setTextColor(tColor);
 		yourLevelETX.setTypeface(font);
